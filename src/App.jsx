@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import './App.css'
+import CountUpCounter from './CountUpCounter'
+import PointsCard from './PointsCard'
 
 function App() {
 
@@ -27,18 +29,45 @@ function App() {
                 <div className='leftColumn'>
                   <h1>QuantumByte<br/><span>Solutions</span></h1>
                   <span className='motto'>Posouváme hranice technických možností.</span>
+                  <div className='line'></div>
+                  <div className='counts-container'>
+                    <div className='counts'>
+                      <CountUpCounter start={0} end={12} duration={2.5}/>
+                      <p>let na trhu</p>
+                    </div>
+                    <div className='counts'>
+                      <CountUpCounter start={0} end={37} duration={3}/>
+                      <p>odborných certifikací</p>
+                    </div>
+                    <div className='counts'>
+                      <CountUpCounter start={0} end={62} duration={4}/>
+                      <p>spokojených klientů</p>
+                    </div>
+                  </div>
                 </div>
                 <div className='rightColumn'>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, ipsa dicta aspernatur tempore, ullam incidunt fugit, nisi officiis suscipit consequatur quasi. Molestiae et commodi repellat iure distinctio, quo porro. At?</p>
+                  <img id='robot' src='images/robot.jpg'/>
                 </div>
               </div>
             </div>
         </div>
 
         
+        {/* SECOND SECTION - POINTS */}
         <div className='secondSection-points'>
-
+          <div className='outsideBox'>
+            <div className='points'>
+              <PointsCard heading={"Inovativní přístup"} description={"Naše řešení jsou postavena na nejnovějších technologiích, které posouvají hranice možného."}/>
+              <PointsCard heading={"Personalizované služby"} description={"Každý projekt přizpůsobujeme specifickým potřebám a cílům vašich podniků."}/>
+              <PointsCard heading={"Bezpečnost na prvním místě"} description={"Nabízíme kvantově odolné zabezpečení pro maximální ochranu vašich dat."}/>
+              <PointsCard heading={"Špičkový tým"} description={"Náš tým expertů přináší bohaté zkušenosti a odborné znalosti z různých oblastí IT."}/>
+            </div>
+          </div>
         </div>
+
+
+
+
         <div className='thirdSection-cards'>
 
         </div>

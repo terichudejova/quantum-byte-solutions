@@ -41,7 +41,6 @@ body, html {
 #mainContainer {
   background-color: var(--main-color);
   width: 100vw;
-  height: 100vh;
   margin: 0;
   padding: 0;
   display: flex;
@@ -50,11 +49,3 @@ body, html {
   align-items: center;
 }
 
-
-p {
-  margin: 0;
-}
-
-b {
-  font-weight: 500;
-} */
