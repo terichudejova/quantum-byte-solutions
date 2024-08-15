@@ -1,12 +1,13 @@
 
 .serviceCard {
-    width: 30rem;
-    height: 40rem;
+    width: 35rem;
+    height: 28rem;
     perspective: 1000px;
     text-align: center;
-    margin-bottom: var(--size-xxl);
+    margin: calc(var(--size-xl) * 2) 0;
     box-shadow: rgba(0, 0, 0, 0.2) 0 0 10px;
     border-radius: 10px;
+    position: relative;;
   }
 
 /* .serviceCard:nth-of-type(1),
@@ -39,7 +40,7 @@
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-    padding: 8rem 3rem;
+    padding: 0 var(--space-s);
     box-sizing: border-box;
   }
   
@@ -48,12 +49,34 @@
     color: white;
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: space-between;
     align-items: center;
     border: 10px solid var(--second-color);
     border-radius: 10px;
     font-size: 24px;
     transform: rotateY(0deg);
+  }
+
+  .circleIcon {
+    background-color: white;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    border: 5px var(--second-color) solid;
+    position: absolute;
+    top: -4rem;
+    left: calc(50% - 4rem);
+    z-index: 1;
+    transition: all 0.8s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--second-color);
+  }
+
+  .serviceCard:hover .circleIcon {
+    border: 5px var(--third-color) solid;
+    color: var(--third-color);
   }
   
   .card-back {
@@ -65,15 +88,21 @@
     border: 10px solid var(--third-color);
     border-radius: 10px;
     justify-content: center;
-    font-size: 24px;
     transform: rotateY(180deg);
   }
 
-  .card-back p:nth-of-type(1) {
+  .card-front p:nth-of-type(1) {
     font-size: var(--size-m);
+    margin-top: calc(var(--size-xl) * 2);
+    margin-bottom: var(--size-xs);
   }
 
-  .card-back p:nth-of-type(2) {
+  .card-front p:nth-of-type(2) {
+    font-size: var(--size-s);
+    margin-top: 0;
+  }
+
+  .card-back p:nth-of-type(1) {
     font-size: var(--size-s);
   }
   

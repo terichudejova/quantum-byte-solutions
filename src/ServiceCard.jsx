@@ -1,18 +1,23 @@
 import "./ServiceCard.css"
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
-export default function ServiceCard({serviceTitle, serviceDescription}) {
+export default function ServiceCard({icon, serviceTitle, serviceDescriptionFront, serviceDescriptionBack}) {
     return (
 
     <div class="serviceCard">
+        <div className="circleIcon">
+            {icon}
+        </div>
         <div class="card-inner">
             <div class="card-front">
-                <div className="serviceTitle-container">
-                    <p>{serviceTitle}</p>
-                </div>
+                    <div>
+                        <p>{serviceTitle}</p>
+                        <p>{serviceDescriptionFront}</p>
+                    </div>
+                    <KeyboardArrowDownIcon sx={{fontSize: "5rem"}} />
             </div>
             <div class="card-back">
-                <p>{serviceTitle}</p>
-                <p>{serviceDescription}</p>
+                <p>{serviceDescriptionBack}</p>
             </div>
         </div>
     </div>
