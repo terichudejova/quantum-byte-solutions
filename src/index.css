@@ -70,6 +70,12 @@ span {
   color: var(--third-color);
 }
 
+.firstSection-about .popis {
+  font-size: var(--size-s);
+  text-align: justify;
+  margin-top: var(--size-m);
+}
+
 .firstSection-innerBox {
   display: flex;
   flex-direction: row;
@@ -168,3 +174,37 @@ span {
   justify-content: space-between;
   align-items: center;
 }
+
+
+
+  /* THIRD SECTION - CARDS (SERVICES) */
+  .thirdSection-cards {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
+
+  .thirdSection-cards h2 {
+    font-family: var(--heading-font);
+    font-size: calc(var(--size-l) * 2);
+    letter-spacing: 0.4rem;
+  }
+
+  .thirdSection-cards .line {
+    width: 10%;
+  }
+
+  .thirdSection-cards .bigCard {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: var(--space-xl) 0;
+  }

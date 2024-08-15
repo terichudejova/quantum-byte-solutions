@@ -12,6 +12,7 @@
     border-radius: 20px;
     padding: var(--size-s) var(--size-l);
     text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 0 10px;
   }
   
   .card h2,
