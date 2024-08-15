@@ -1,12 +1,12 @@
 
 .card {
     width: 18rem;
-    height: 20rem;
+    height: 26rem;
     background: var(--second-color);
     position: relative;
     display: flex;
     flex-direction: column;
-    place-content: center;
+    place-content: start;
     place-items: center;
     overflow: hidden;
     border-radius: 20px;
@@ -15,11 +15,16 @@
   }
   
   .card h2,
-  .card p {
+  .card p,
+  .card span {
     z-index: 1;
     color: white;
     font-size: var(--size-s);
     font-family: var(--main-font);
+  }
+
+  .card span {
+    margin-top: var(--size-s);
   }
 
   .card .cardLine {
@@ -32,9 +37,10 @@
   .card::before {
     content: '';
     position: absolute;
+    top: -10%;
     width: 10rem;
     background-image: linear-gradient(180deg, var(--third-color), var(--second-color));
-    height: 150%;
+    height: 130%;
     animation: rotBGimg 3s linear infinite;
     transition: all 0.2s linear;
   }

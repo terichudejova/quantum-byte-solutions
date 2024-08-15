@@ -2,6 +2,10 @@ import { useState } from 'react'
 import './App.css'
 import CountUpCounter from './CountUpCounter'
 import PointsCard from './PointsCard'
+import EmojiObjectsIcon from '@mui/icons-material/EmojiObjects';
+import SettingsIcon from '@mui/icons-material/Settings';
+import SecurityIcon from '@mui/icons-material/Security';
+import GroupsIcon from '@mui/icons-material/Groups';
 
 function App() {
 
@@ -40,7 +44,7 @@ function App() {
                       <p>odborných certifikací</p>
                     </div>
                     <div className='counts'>
-                      <CountUpCounter start={0} end={62} duration={4}/>
+                      <CountUpCounter start={0} end={62} duration={5}/>
                       <p>spokojených klientů</p>
                     </div>
                   </div>
@@ -57,10 +61,10 @@ function App() {
         <div className='secondSection-points'>
           <div className='outsideBox'>
             <div className='points'>
-              <PointsCard heading={"Inovativní přístup"} description={"Naše řešení jsou postavena na nejnovějších technologiích, které posouvají hranice možného."}/>
-              <PointsCard heading={"Personalizované služby"} description={"Každý projekt přizpůsobujeme specifickým potřebám a cílům vašich podniků."}/>
-              <PointsCard heading={"Bezpečnost na prvním místě"} description={"Nabízíme kvantově odolné zabezpečení pro maximální ochranu vašich dat."}/>
-              <PointsCard heading={"Špičkový tým"} description={"Náš tým expertů přináší bohaté zkušenosti a odborné znalosti z různých oblastí IT."}/>
+              <PointsCard icon={<EmojiObjectsIcon style={{ fontSize: 50 }} />} heading={"Inovativní přístup"} description={"Naše řešení jsou postavena na nejnovějších technologiích, které posouvají hranice možného."}/>
+              <PointsCard icon={<SettingsIcon style={{ fontSize: 50 }} />} heading={"Personalizované služby"} description={"Každý projekt přizpůsobujeme specifickým potřebám a cílům vašich podniků."}/>
+              <PointsCard icon={<SecurityIcon style={{ fontSize: 50 }} />} heading={"Bezpečnost na prvním místě"} description={"Nabízíme kvantově odolné zabezpečení pro maximální ochranu vašich dat."}/>
+              <PointsCard icon={<GroupsIcon style={{ fontSize: 50 }} />} heading={"Špičkový tým"} description={"Náš tým expertů přináší bohaté zkušenosti a odborné znalosti z různých oblastí IT."}/>
             </div>
           </div>
         </div>

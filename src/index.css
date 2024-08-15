@@ -38,6 +38,7 @@ span {
   list-style: none;
   font-family: var(--main-font);
   color: var(--third-color);
+  font-weight: 600;
 }
 
 .navbarSection ul li:hover {
@@ -54,7 +55,7 @@ span {
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  margin-top: var(--size-l);
+  margin-top: calc(var(--size-xxl) * 2);
 }
 
 .firstSection-about h1 {
@@ -85,7 +86,7 @@ span {
   display: flex;
   flex-direction: column;
   justify-content: start;
-  align-items: center;
+  align-items: end;
 }
 
 .motto {
@@ -154,7 +155,8 @@ span {
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  margin-top: calc(var(--size-xxl) * 2);
+  margin-top: calc(var(--size-xxl) * 3);
+  margin-bottom: calc(var(--size-xxl) * 3);
 }
 
 
@@ -165,5 +167,4 @@ span {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: calc(var(--size-xl) * 2);
 }
