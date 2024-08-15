@@ -13,6 +13,7 @@ import AccountTreeIcon from '@mui/icons-material/AccountTree';
 import AutoStoriesIcon from '@mui/icons-material/AutoStories';
 import HubIcon from '@mui/icons-material/Hub';
 
+
 function App() {
 
   return (
@@ -24,8 +25,8 @@ function App() {
             <ul className='menu'>
               <li><a href='#onas'>O nás</a></li>
               <li><a href='#sluzby'>Služby</a></li>
-              <li><a>Tým</a></li>
-              <li><a>Recenze</a></li>
+              <li><a href='#tym'>Tým</a></li>
+              <li><a href='#recenzeLink'>Recenze</a></li>
               <li><a>Kontakt</a></li>
             </ul>
           </div>
@@ -77,6 +78,8 @@ function App() {
         </div>
 
 
+
+        {/* THIRD SECTION - SLUŽBY */}
         <div className='thirdSection-cards' id='sluzby'>
           <div className='outsideBox'>
             <h2>Služby</h2>
@@ -91,6 +94,33 @@ function App() {
             </div>
           </div>
         </div>
+
+
+
+        {/* FOURT SECTION - TÝM */}
+        <div className='fourthSection-team' id='tym'>
+            <div className='outsideBox'>
+              <h2>Tým</h2>
+              <div className='line'></div>
+              <div className='teamCards'>
+                
+              </div>
+            </div>
+        </div>
+
+
+        {/* FIFTH SECTION - RECENZE */}
+        <div className='fifthSection-recenze' id='recenzeLink'>
+            <div className='outsideBox'>
+              <h2>Recenze</h2>
+              <div className='line'></div>
+              <div className='recenze'>
+
+              </div>
+            </div>
+        </div>
+
+
       </div>
   )
 }

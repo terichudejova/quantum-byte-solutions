@@ -1,5 +1,5 @@
 
-.card {
+.cardPoints {
     width: 18rem;
     height: 26rem;
     background: var(--second-color);
@@ -15,27 +15,27 @@
     box-shadow: rgba(0, 0, 0, 0.2) 0 0 10px;
   }
   
-  .card h2,
-  .card p,
-  .card span {
+  .cardPoints h2,
+  .cardPoints p,
+  .cardPoints span {
     z-index: 1;
     color: white;
     font-size: var(--size-s);
     font-family: var(--main-font);
   }
 
-  .card span {
+  .cardPoints span {
     margin-top: var(--size-s);
   }
 
-  .card .cardLine {
+  .cardPoints .cardLine {
     width: 25%;
     height: 3px;
     background-color: var(--third-color);
     z-index: 1;
   }
   
-  .card::before {
+  .cardPoints::before {
     content: '';
     position: absolute;
     top: -10%;
@@ -56,7 +56,7 @@
     }
   }
   
-  .card::after {
+  .cardPoints::after {
     content: '';
     position: absolute;
     background: var(--second-color);

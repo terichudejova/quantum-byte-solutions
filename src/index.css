@@ -225,5 +225,64 @@ span {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    padding: var(--space-xl) 0;
+    padding: var(--space-xl) 0 var(--space-s) 0;
+  }
+
+
+
+
+
+  /* FOURTH SECTION - TÝM */
+  .fourthSection-team {
+    width: 100%;
+    height: 60rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding-top: var(--space-xxl);
+    background-color: var(--second-color);
+  }
+
+  .fourthSection-team h2 {
+    font-family: var(--heading-font);
+    font-size: calc(var(--size-l) * 2);
+    letter-spacing: 0.4rem;
+    color: var(--third-color);
+  }
+
+  .fourthSection-team .line {
+    width: 10%;
+    background-color: white;
+  }
+
+  .teamCards {
+    width: 100%;
+    height: auto;
+    margin-top: var(--space-xxxl);
+  }
+
+
+
+  /* FIFTH SECTION - RECENZE */
+  .fifthSection-recenze {
+    width: 100%;
+    height: 60rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding-top: var(--space-xxl);
+    background-color: var(--main-color);
+  }
+
+  .fifthSection-recenze h2 {
+    font-family: var(--heading-font);
+    font-size: calc(var(--size-l) * 2);
+    letter-spacing: 0.4rem;
+    color: var(--third-color);
+  }
+
+  .fifthSection-recenze .line {
+    width: 10%;
   }
