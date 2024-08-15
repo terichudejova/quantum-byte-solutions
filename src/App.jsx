@@ -1,34 +1,48 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div id='mainContainer'>
+
+        {/* NAVBAR */}
+        <div className='navbarSection'>
+          <div className='outsideBox'>
+            <ul className='menu'>
+              <li><a>O nás</a></li>
+              <li><a>Služby</a></li>
+              <li><a>Tým</a></li>
+              <li><a>Recenze</a></li>
+              <li><a>Kontakt</a></li>
+            </ul>
+          </div>
+        </div>
+
+
+        {/* FIRST SECTION - ABOUT */}
+        <div className='firstSection-about'>
+            <div className='outsideBox'>
+              <div className='firstSection-innerBox'>
+                <div className='leftColumn'>
+                  <h1>QuantumByte<br/><span>Solutions</span></h1>
+                  <span className='motto'>Posouváme hranice technických možností.</span>
+                </div>
+                <div className='rightColumn'>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, ipsa dicta aspernatur tempore, ullam incidunt fugit, nisi officiis suscipit consequatur quasi. Molestiae et commodi repellat iure distinctio, quo porro. At?</p>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        
+        <div className='secondSection-points'>
+
+        </div>
+        <div className='thirdSection-cards'>
+
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
   )
 }
 
