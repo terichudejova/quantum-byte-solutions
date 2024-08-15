@@ -22,8 +22,8 @@ function App() {
         <div className='navbarSection'>
           <div className='outsideBox'>
             <ul className='menu'>
-              <li><a>O nás</a></li>
-              <li><a>Služby</a></li>
+              <li><a href='#onas'>O nás</a></li>
+              <li><a href='#sluzby'>Služby</a></li>
               <li><a>Tým</a></li>
               <li><a>Recenze</a></li>
               <li><a>Kontakt</a></li>
@@ -33,7 +33,7 @@ function App() {
 
 
         {/* FIRST SECTION - ABOUT */}
-        <div className='firstSection-about'>
+        <div className='firstSection-about' id='onas'>
             <div className='outsideBox'>
               <div className='firstSection-innerBox'>
                 <div className='leftColumn'>
@@ -47,7 +47,7 @@ function App() {
                       <p>let na trhu</p>
                     </div>
                     <div className='counts'>
-                      <CountUpCounter start={0} end={37} duration={3}/>
+                      <CountUpCounter start={0} end={21} duration={3}/>
                       <p>odborných certifikací</p>
                     </div>
                     <div className='counts'>
@@ -69,7 +69,7 @@ function App() {
           <div className='outsideBox'>
             <div className='points'>
               <PointsCard icon={<EmojiObjectsIcon style={{ fontSize: 50 }} />} heading={"Inovativní přístup"} description={"Naše řešení jsou postavena na nejnovějších technologiích, které posouvají hranice možného."}/>
-              <PointsCard icon={<SettingsIcon style={{ fontSize: 50 }} />} heading={"Personalizované služby"} description={"Každý projekt přizpůsobujeme specifickým potřebám a cílům vašich podniků."}/>
+              <PointsCard icon={<SettingsIcon style={{ fontSize: 50 }} />} heading={"Personalizované služby"} description={"Každý projekt přizpůsobujeme specifickým potřebám a cílům vašeho podniku."}/>
               <PointsCard icon={<SecurityIcon style={{ fontSize: 50 }} />} heading={"Bezpečnost na prvním místě"} description={"Nabízíme kvantově odolné zabezpečení pro maximální ochranu vašich dat."}/>
               <PointsCard icon={<GroupsIcon style={{ fontSize: 50 }} />} heading={"Špičkový tým"} description={"Náš tým expertů přináší bohaté zkušenosti a odborné znalosti z různých oblastí IT."}/>
             </div>
@@ -77,7 +77,7 @@ function App() {
         </div>
 
 
-        <div className='thirdSection-cards'>
+        <div className='thirdSection-cards' id='sluzby'>
           <div className='outsideBox'>
             <h2>Služby</h2>
             <div className='line'></div>

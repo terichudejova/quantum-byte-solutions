@@ -1,4 +1,7 @@
 /* OBECNÁ NASTAVENÍ */
+.mainContainer {
+  position: relative;
+}
 
 .outsideBox {
   width: 80%;
@@ -13,11 +16,16 @@ span {
 /* NAVBAR */
 .navbarSection {
   width: 100%;
+  background-color:  rgb(227, 226, 226, 0.9);
   height: auto;
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: start; 
   align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
 }
 
 .menu {
@@ -30,24 +38,34 @@ span {
   border-bottom: solid 0.5px var(--third-color);
 }
 
+.navbarSection ul {
+  margin-bottom: 0;
+}
+
 .navbarSection ul li {
   font-size: var(--size-m);
   margin-left: var(--space-s);
   margin-right: var(--space-s);
-  text-decoration: none;
   list-style: none;
   font-family: var(--main-font);
-  color: var(--third-color);
   font-weight: 600;
 }
 
-.navbarSection ul li:hover {
+.navbarSection a {
+  color: var(--third-color);
+  text-decoration: none;
+}
+
+.navbarSection a:hover {
   color: var(--hover-color);
   cursor: pointer;
 }
 
-
 /* FIRST SECTION - ABOUT */
+#onas {
+  scroll-margin-top: 12rem; /* Výška pevné navigace */
+}
+
 .firstSection-about {
   width: 100%;
   height: auto;
@@ -55,7 +73,7 @@ span {
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  margin-top: calc(var(--size-xxl) * 2);
+  margin-top: calc(var(--size-xl) * 4);
 }
 
 .firstSection-about h1 {
@@ -162,7 +180,6 @@ span {
   justify-content: start;
   align-items: center;
   margin-top: calc(var(--size-xxl) * 3);
-  margin-bottom: calc(var(--size-xxl) * 3);
 }
 
 
@@ -185,12 +202,14 @@ span {
     flex-direction: column;
     justify-content: start;
     align-items: center;
+    padding-top: var(--space-xxl);
   }
 
   .thirdSection-cards h2 {
     font-family: var(--heading-font);
     font-size: calc(var(--size-l) * 2);
     letter-spacing: 0.4rem;
+    color: var(--third-color);
   }
 
   .thirdSection-cards .line {
