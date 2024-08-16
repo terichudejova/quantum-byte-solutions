@@ -12,6 +12,7 @@ import PrecisionManufacturingIcon from '@mui/icons-material/PrecisionManufacturi
 import AccountTreeIcon from '@mui/icons-material/AccountTree';
 import AutoStoriesIcon from '@mui/icons-material/AutoStories';
 import HubIcon from '@mui/icons-material/Hub';
+import ReviewCard from './ReviewCard';
 
 
 function App() {
@@ -102,11 +103,11 @@ function App() {
             <div className='outsideBox'>
               <h2>Tým</h2>
               <div className='line'></div>
-              <p className='popis'>Za každým úspěšným projektem stojí silný a dynamický tým, který se skládá z odborníků na špičkové úrovni ve svých oborech. Naše firma se může pochlubit nejen hlubokými znalostmi a technickými dovednostmi, ale i vášní pro inovace a neustálé zlepšování. Každý člen týmu přináší jedinečnou kombinaci zkušeností a znalostí, která nám umožňuje nacházet řešení i pro ty nejnáročnější technologické výzvy.<br/><br/>
-
-Náš tým zahrnuje specialisty na kvantové technologie, umělou inteligenci, bezpečnost, analýzu dat a mnoho dalších klíčových oblastí. Společně pracujeme na vývoji inovativních řešení, která nejen splňují aktuální potřeby našich klientů, ale také přinášejí konkurenční výhody pro budoucnost. Naši odborníci jsou připraveni poskytovat vám podporu, od prvotního konzultace až po finální implementaci a další rozvoj.<br/><br/>
-
-Věříme, že síla spočívá v rozmanitosti našich zkušeností a schopností. Seznamte se s týmem, který je připraven proměnit vaše výzvy v příležitosti a přivést vaše projekty k úspěšnému závěru.</p>
+              <p className='popis'>
+                Za každým úspěšným projektem stojí silný a dynamický tým, který se skládá z odborníků na špičkové úrovni ve svých oborech. Naše firma se může pochlubit nejen hlubokými znalostmi a technickými dovednostmi, ale i vášní pro inovace a neustálé zlepšování. Každý člen týmu přináší jedinečnou kombinaci zkušeností a znalostí, která nám umožňuje nacházet řešení i pro ty nejnáročnější technologické výzvy.<br/><br/>
+                Náš tým zahrnuje specialisty na kvantové technologie, umělou inteligenci, bezpečnost, analýzu dat a mnoho dalších klíčových oblastí. Společně pracujeme na vývoji inovativních řešení, která nejen splňují aktuální potřeby našich klientů, ale také přinášejí konkurenční výhody pro budoucnost. Naši odborníci jsou připraveni poskytovat vám podporu, od prvotního konzultace až po finální implementaci a další rozvoj.<br/><br/>
+                Věříme, že síla spočívá v rozmanitosti našich zkušeností a schopností. Seznamte se s týmem, který je připraven proměnit vaše výzvy v příležitosti a přivést vaše projekty k úspěšnému závěru.
+              </p>
               <div className='teamCards'>
                 <div className='teamMember'>
                   <img src='images/person1.jpg'/>
@@ -181,11 +182,35 @@ Věříme, že síla spočívá v rozmanitosti našich zkušeností a schopnost�
             <div className='outsideBox'>
               <h2>Recenze</h2>
               <div className='line'></div>
+              <p className='popis'>Naše výsledky hovoří samy za sebe, ale ještě lépe o nás vypovídají zkušenosti našich spokojených klientů. Níže najdete recenze od firem, které díky našim řešením dosáhly svých cílů a překonaly náročné technologické výzvy. Spolupráce s námi jim přinesla nejen konkrétní výsledky, ale také dlouhodobou hodnotu a konkurenční výhodu.</p>
               <div className='recenze'>
-
+                <ReviewCard
+                  company={"TechLogix"}
+                  review={"Spolupráce s QuantumByte Solutions byla klíčová pro optimalizaci našeho dodavatelského řetězce. Jejich kvantová optimalizace nám umožnila zvýšit efektivitu o více než 30 % a snížit náklady na logistiku. Jejich tým je skutečně špičkový, a to nejen díky odborným znalostem, ale také díky jejich ochotě jít nad rámec našich očekávání."}
+                  reviewer={"John Doe, CEO"}
+                />
+                <ReviewCard
+                  company={"NeuroWave Analytics"}
+                  review={"Díky AI-driven automatizaci od QuantumByte Solutions jsme dosáhli nové úrovně efektivity. Automatizovali jsme několik klíčových procesů, což nám ušetřilo stovky hodin měsíčně a zvýšilo produktivitu našeho týmu. Tým QuantumByte Solutions nám poskytl komplexní podporu od návrhu až po implementaci."}
+                  reviewer={"Jane Doe, CTO"}
+                />
+                <ReviewCard
+                  company={"SafeGuard Financial"}
+                  review={"Bezpečnost našich dat je pro nás prioritou, a proto jsme se obrátili na QuantumByte Solutions pro kvantovou bezpečnost. Jejich šifrovací technologie nám poskytly jistotu, že naše citlivé informace jsou v bezpečí i před budoucími kvantovými hrozbami. Spolupráce s jejich týmem byla profesionální a přínosná."}
+                  reviewer={"John Doe, Vedoucí IT"}
+                />
+                <ReviewCard
+                  company={"DataMinds"}
+                  review={"QuantumByte Solutions nám pomohli převést naše datové analýzy na novou úroveň díky jejich pokročilým simulacím a modelování. Díky tomu jsme dokázali lépe porozumět dynamice trhu a přijímat informovanější strategická rozhodnutí. Jejich tým je profesionální, rychlý a vždy ochotný pomoci."}
+                  reviewer={"Jane Doe, Vedoucí analytického oddělení"}
+                />
               </div>
             </div>
         </div>
+
+
+
+        {/* LAST SECTION - KONTAKT */}
 
 
       </div>

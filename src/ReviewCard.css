@@ -1,0 +1,58 @@
+.reviewContainer {
+    background-color: white;
+    width: 40%;
+    height: auto;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    position: relative;
+    margin: var(--space-m);
+    box-shadow: rgba(0, 0, 0, 0.2) 0 0 20px;
+}
+
+.reviewContainer .quote {
+    position: absolute;
+    top: -5rem;
+    right: 3rem;
+    color: var(--second-color);
+    font-size: calc(var(--size-l) * 4);
+    margin: 0;
+}
+
+.reviewContainer h3 {
+    font-size: var(--size-m);
+    font-family: var(--main-font);
+    margin: var(--size-xxl) 0 0 var(--size-xl);
+    color: var(--third-color);
+}
+
+.reviewContainer p {
+    font-size: var(--size-s);
+    margin-left: var(--size-xl);
+    margin-right: var(--size-xl);
+    text-align: justify;
+}
+
+.reviewContainer .stars {
+    margin-left: var(--size-xl);
+}
+
+.reviewContainer .stars .star {
+    font-size: var(--size-xl);
+    color: var(--third-color);
+}
+
+.reviewContainer .reviewLine {
+    margin-left: var(--size-xl);
+    width: 25%;
+    height: 2px;
+    background-color: var(--second-color);
+    margin-top: var(--space-xs);
+}
+
+.reviewContainer .reviewer {
+    font-weight: 700;
+    margin-bottom: var(--space-s);
+}
