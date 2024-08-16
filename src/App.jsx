@@ -102,8 +102,75 @@ function App() {
             <div className='outsideBox'>
               <h2>Tým</h2>
               <div className='line'></div>
+              <p className='popis'>Za každým úspěšným projektem stojí silný a dynamický tým, který se skládá z odborníků na špičkové úrovni ve svých oborech. Naše firma se může pochlubit nejen hlubokými znalostmi a technickými dovednostmi, ale i vášní pro inovace a neustálé zlepšování. Každý člen týmu přináší jedinečnou kombinaci zkušeností a znalostí, která nám umožňuje nacházet řešení i pro ty nejnáročnější technologické výzvy.<br/><br/>
+
+Náš tým zahrnuje specialisty na kvantové technologie, umělou inteligenci, bezpečnost, analýzu dat a mnoho dalších klíčových oblastí. Společně pracujeme na vývoji inovativních řešení, která nejen splňují aktuální potřeby našich klientů, ale také přinášejí konkurenční výhody pro budoucnost. Naši odborníci jsou připraveni poskytovat vám podporu, od prvotního konzultace až po finální implementaci a další rozvoj.<br/><br/>
+
+Věříme, že síla spočívá v rozmanitosti našich zkušeností a schopností. Seznamte se s týmem, který je připraven proměnit vaše výzvy v příležitosti a přivést vaše projekty k úspěšnému závěru.</p>
               <div className='teamCards'>
-                
+                <div className='teamMember'>
+                  <img src='images/person1.jpg'/>
+                  <div className='teamMember-description'>
+                    <p className='name'>John Doe</p>
+                    <p className='position'>Výkonný ředitel firmy</p>
+                  </div>
+                </div>
+                <div className='teamMember'>
+                  <img src='images/person2.jpg'/>
+                  <div className='teamMember-description'>
+                    <p className='name'>John Doe</p>
+                    <p className='position'>Technický ředitel</p>
+                  </div>
+                </div>
+                <div className='teamMember'>
+                  <img src='images/person3.jpg'/>
+                  <div className='teamMember-description'>
+                    <p className='name'>Jane Doe</p>
+                    <p className='position'>Vedoucí kvantového výzkumu</p>
+                  </div>
+                </div>
+                <div className='teamMember'>
+                  <img src='images/person4.jpg'/>
+                  <div className='teamMember-description'>
+                    <p className='name'>Jane Doe</p>
+                    <p className='position'>Projektová manažerka</p>
+                  </div>
+                </div>
+                <div className='teamMember'>
+                  <img src='images/person5.jpg'/>
+                  <div className='teamMember-description'>
+                    <p className='name'>John Doe</p>
+                    <p className='position'>AI inženýr</p>
+                  </div>
+                </div>
+                <div className='teamMember'>
+                  <img src='images/person9.jpg'/>
+                  <div className='teamMember-description'>
+                    <p className='name'>John Doe</p>
+                    <p className='position'>Bezpečnostní analytik</p>
+                  </div>
+                </div>
+                <div className='teamMember'>
+                  <img src='images/person7.jpg'/>
+                  <div className='teamMember-description'>
+                    <p className='name'>Jane Doe</p>
+                    <p className='position'>Data analytička</p>
+                  </div>
+                </div>
+                <div className='teamMember'>
+                  <img src='images/person6.jpg'/>
+                  <div className='teamMember-description'>
+                    <p className='name'>Jane Doe</p>
+                    <p className='position'>Simulační inženýr</p>
+                  </div>
+                </div>
+                <div className='teamMember'>
+                  <img src='images/person8.jpg'/>
+                  <div className='teamMember-description'>
+                    <p className='name'>John Doe</p>
+                    <p className='position'>Softwarový vývojář</p>
+                  </div>
+                </div>
               </div>
             </div>
         </div>
