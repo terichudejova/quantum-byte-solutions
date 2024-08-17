@@ -1,3 +1,4 @@
+import FormfacadeEmbed from "@formfacade/embed-react";
 import { useState } from 'react'
 import './App.css'
 import CountUpCounter from './CountUpCounter'
@@ -13,6 +14,9 @@ import AccountTreeIcon from '@mui/icons-material/AccountTree';
 import AutoStoriesIcon from '@mui/icons-material/AutoStories';
 import HubIcon from '@mui/icons-material/Hub';
 import ReviewCard from './ReviewCard';
+import EmailIcon from '@mui/icons-material/Email';
+import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
 
 
 function App() {
@@ -213,10 +217,30 @@ function App() {
         {/* LAST SECTION - KONTAKT */}
         <div className='sixthSection-contact' id='kontakt'>
           <div className='outsideBox'>
-            <h2>Kontakt</h2>
+            <h2>Kontaktujte nás</h2>
             <div className='line'></div>
+            <p className="popis">Máte otázky, potřebujete poradit nebo hledáte partnera pro řešení vašich technologických výzev? Jsme tu, abychom vám pomohli. Ať už se jedná o konkrétní dotaz, poptávku po našich službách nebo obecnou konzultaci, neváhejte se na nás obrátit. Kontaktujte nás prostřednictvím níže uvedených údajů nebo jednoduše vyplňte kontaktní formulář. Náš tým se vám ozve co nejdříve a společně najdeme nejlepší řešení pro vaše potřeby. Těšíme se na spolupráci s vámi a na to, jak společně posuneme hranice možného.</p>
             <div className='contactPage'>
-
+              <div className="formular">
+                <FormfacadeEmbed
+                  formFacadeURL="https://formfacade.com/include/107952329843461447605/form/1FAIpQLSfqS0LYJHpjVowh33JVg9l8V3lK1lL8fyWWvQM4KnT5wlfJnw/classic.js/?div=ff-compose"
+                  onSubmitForm={() => console.log('Form submitted')}
+                />
+              </div>
+              <div className="kontaktniInformace">
+                <div className="dvojice">
+                  <EmailIcon className="contactIcon"/>
+                  <p>info@qbs.com</p>
+                </div>
+                <div className="dvojice">
+                  <LocalPhoneIcon className="contactIcon"/>
+                  <p>+420 123 456 789</p>
+                </div>
+                <div className="dvojice">
+                  <LocationOnIcon className="contactIcon"/>
+                  <p>Imaginární Ulice 123, Praha 1 110 00</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>

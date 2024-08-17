@@ -385,3 +385,55 @@ span {
     width: 10%;
     background-color: white;
   }
+
+  .sixthSection-contact .popis {
+    font-size: var(--size-s2);
+    text-align: justify;
+    margin-top: var(--size-xxl);
+    color: white;
+  }
+
+  .sixthSection-contact .contactPage {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    margin-top: var(--space-xxl);
+  }
+
+  .sixthSection-contact .contactPage .formular {
+    width: 40%;
+    margin-right: var(--space-m);
+  }
+
+  .sixthSection-contact .contactPage .kontaktniInformace {
+    width: 60%;
+    height: auto;
+    border-top: white 1px solid;
+    border-bottom: white 1px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+
+  .sixthSection-contact .contactPage .kontaktniInformace .dvojice {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    margin-top: var(--space-xs);
+    margin-bottom: var(--space-xs);
+  }
+
+  .sixthSection-contact .contactPage .kontaktniInformace .dvojice .contactIcon {
+    color: white;
+    font-size: var(--size-xxl);
+    margin-right: var(--space-s);
+    
+  }
+
+  .sixthSection-contact .contactPage .kontaktniInformace .dvojice p {
+    color: white;
+    font-size: var(--size-s);
+  }
