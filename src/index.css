@@ -188,8 +188,9 @@ span {
   height: auto;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 
@@ -222,7 +223,7 @@ span {
     border-radius: 15px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     padding: var(--space-xl) 0 var(--space-s) 0;
@@ -270,7 +271,7 @@ span {
     margin-bottom: var(--space-m);
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
   }
@@ -280,7 +281,7 @@ span {
     flex-direction: row;
     justify-content: start;
     align-items: start;
-    margin-bottom: var(--space-xl);
+    margin: 0 var(--space-xs) var(--space-xl) var(--space-xs);
     width: 35rem;
     border-right: 0.5px solid white;
   }
@@ -356,4 +357,31 @@ span {
     justify-content: space-between;
     align-items: start;
     flex-wrap: wrap;
+  }
+
+
+  
+
+  /* SIXTH SECTION - KONTAKT */
+  .sixthSection-contact {
+    width: 100%;
+    height: 100rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding-top: var(--space-xxl);
+    background-color: var(--second-color);
+  }
+
+  .sixthSection-contact h2 {
+    font-family: var(--heading-font);
+    font-size: calc(var(--size-l) * 2);
+    letter-spacing: 0.4rem;
+    color: var(--third-color);
+  }
+
+  .sixthSection-contact .line {
+    width: 10%;
+    background-color: white;
   }

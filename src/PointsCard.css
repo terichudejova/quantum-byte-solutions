@@ -13,6 +13,7 @@
     padding: var(--size-s) var(--size-l);
     text-align: center;
     box-shadow: rgba(0, 0, 0, 0.2) 0 0 10px;
+    margin: var(--space-s) var(--space-xs2);
   }
   
   .cardPoints h2,

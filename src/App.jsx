@@ -28,7 +28,7 @@ function App() {
               <li><a href='#sluzby'>Služby</a></li>
               <li><a href='#tym'>Tým</a></li>
               <li><a href='#recenzeLink'>Recenze</a></li>
-              <li><a>Kontakt</a></li>
+              <li><a href='#kontakt'>Kontakt</a></li>
             </ul>
           </div>
         </div>
@@ -211,6 +211,18 @@ function App() {
 
 
         {/* LAST SECTION - KONTAKT */}
+        <div className='sixthSection-contact' id='kontakt'>
+          <div className='outsideBox'>
+            <h2>Kontakt</h2>
+            <div className='line'></div>
+            <div className='contactPage'>
+
+            </div>
+          </div>
+        </div>
+
+
+
 
 
       </div>
