@@ -581,8 +581,11 @@ span {
     }
   }
 
-
-
+  @media only screen and (max-width: 750px) {
+    .firstSection-about {
+      margin-top: var(--space-xl);
+    }
+  }
 
 
 /* ---------------------------------------------------------------- */
@@ -837,7 +840,7 @@ span {
     font-size: calc(var(--size-m) *2);
   }
 
-  #motto {
+  .motto {
     font-size: var(--size-s2);
   }
 
@@ -845,6 +848,10 @@ span {
   .fourthSection-team .popis,
   .fifthSection-recenze .popis,
   .sixthSection-contact .popis {
+    font-size: var(--size-s);
+  }
+
+  #motto {
     font-size: var(--size-s);
   }
 
