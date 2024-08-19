@@ -581,7 +581,7 @@ span {
     }
   }
 
-  @media only screen and (max-width: 750px) {
+  @media only screen and (max-width: 800px) {
     .firstSection-about {
       margin-top: var(--space-xl);
     }
