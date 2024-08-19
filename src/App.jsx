@@ -65,7 +65,7 @@ function App() {
                   </div>
                 </div>
                 <div className='rightColumn'>
-                  <img id='robot' src='images/robot.jpg'/>
+                  <img id='robot' src='images/robot2.jpg'/>
                 </div>
               </div>
             </div>
