@@ -17,6 +17,7 @@ import ReviewCard from './ReviewCard';
 import EmailIcon from '@mui/icons-material/Email';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
+import HamburgerMenu from "./HamburgerMenu"
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
         {/* NAVBAR */}
         <div className='navbarSection'>
           <div className='outsideBox'>
+            <HamburgerMenu />
             <ul className='menu'>
               <li><a href='#onas'>O nás</a></li>
               <li><a href='#sluzby'>Služby</a></li>

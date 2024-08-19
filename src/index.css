@@ -509,8 +509,12 @@ span {
 
   /* NAVBAR */
   @media only screen and (max-width: 800px) {
-    .navbarSection .menu {
+    .navbarSection .menu a {
       display: none;
+    }
+
+    .navbarSection .menu {
+      border-bottom: none;
     }
   }
   
