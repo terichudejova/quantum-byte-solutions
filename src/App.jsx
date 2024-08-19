@@ -65,7 +65,7 @@ function App() {
                   </div>
                 </div>
                 <div className='rightColumn'>
-                  <img id='robot' src='images/robot2.jpg'/>
+                  <img id='robot' src='images/robot2.jpg' title="source: Freepik" alt="robot artificial intelligence"/>
                 </div>
               </div>
             </div>
@@ -116,63 +116,63 @@ function App() {
               </p>
               <div className='teamCards'>
                 <div className='teamMember'>
-                  <img src='images/person1.jpg'/>
+                  <img src='images/person1.jpg' alt="person face" title="source: Unsplash"/>
                   <div className='teamMember-description'>
                     <p className='name'>John Doe</p>
                     <p className='position'>Výkonný ředitel firmy</p>
                   </div>
                 </div>
                 <div className='teamMember'>
-                  <img src='images/person2.jpg'/>
+                  <img src='images/person2.jpg' alt="person face" title="source: Unsplash"/>
                   <div className='teamMember-description'>
                     <p className='name'>John Doe</p>
                     <p className='position'>Technický ředitel</p>
                   </div>
                 </div>
                 <div className='teamMember'>
-                  <img src='images/person3.jpg'/>
+                  <img src='images/person3.jpg' alt="person face" title="source: Unsplash"/>
                   <div className='teamMember-description'>
                     <p className='name'>Jane Doe</p>
                     <p className='position'>Vedoucí kvantového výzkumu</p>
                   </div>
                 </div>
                 <div className='teamMember'>
-                  <img src='images/person4.jpg'/>
+                  <img src='images/person4.jpg' alt="person face" title="source: Unsplash"/>
                   <div className='teamMember-description'>
                     <p className='name'>Jane Doe</p>
                     <p className='position'>Projektová manažerka</p>
                   </div>
                 </div>
                 <div className='teamMember'>
-                  <img src='images/person5.jpg'/>
+                  <img src='images/person5.jpg' alt="person face" title="source: Unsplash"/>
                   <div className='teamMember-description'>
                     <p className='name'>John Doe</p>
                     <p className='position'>AI inženýr</p>
                   </div>
                 </div>
                 <div className='teamMember'>
-                  <img src='images/person9.jpg'/>
+                  <img src='images/person9.jpg' alt="person face" title="source: Unsplash"/>
                   <div className='teamMember-description'>
                     <p className='name'>John Doe</p>
                     <p className='position'>Bezpečnostní analytik</p>
                   </div>
                 </div>
                 <div className='teamMember'>
-                  <img src='images/person7.jpg'/>
+                  <img src='images/person7.jpg' alt="person face" title="source: Unsplash"/>
                   <div className='teamMember-description'>
                     <p className='name'>Jane Doe</p>
                     <p className='position'>Data analytička</p>
                   </div>
                 </div>
                 <div className='teamMember'>
-                  <img src='images/person6.jpg'/>
+                  <img src='images/person6.jpg' alt="person face" title="source: Unsplash"/>
                   <div className='teamMember-description'>
                     <p className='name'>Jane Doe</p>
                     <p className='position'>Simulační inženýr</p>
                   </div>
                 </div>
                 <div className='teamMember'>
-                  <img src='images/person8.jpg'/>
+                  <img src='images/person8.jpg' alt="person face" title="source: Unsplash"/>
                   <div className='teamMember-description'>
                     <p className='name'>John Doe</p>
                     <p className='position'>Softwarový vývojář</p>
