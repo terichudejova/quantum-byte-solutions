@@ -826,7 +826,7 @@ span {
 
 @media only screen and (max-width: 450px) {
   .footer p {
-    font-size: calc(var(--size-s) / 2);
+    font-size: calc(var(--size-m) / 3);
   }
 
   .thirdSection-cards .line,
