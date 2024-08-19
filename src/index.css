@@ -459,7 +459,11 @@ span {
     color: white;
     font-size: var(--size-xxl);
     margin-right: var(--space-s);
-    
+  }
+
+  .sixthSection-contact .contactPage .kontaktniInformace .dvojice .contactIcon:hover {
+    cursor: pointer;
+    color: var(--third-color);
   }
 
   .sixthSection-contact .contactPage .kontaktniInformace .dvojice p {
@@ -469,13 +473,8 @@ span {
 
   .sixthSection-contact .contactPage .kontaktniInformace .mapa {
     margin-bottom: var(--space-s);
+    margin-top: var(--space-s);
     box-shadow: rgba(0, 0, 0, 0.2) 0 0 20px;
-  }
-
-  #phoneIcon:hover,
-  #mapIcon:hover {
-    cursor: pointer;
-    color: var(--third-color);
   }
 
 /* ---------------------------------------------------------------- */
@@ -539,8 +538,23 @@ span {
 
   @media only screen and (max-width: 900px) {
     #robot {
+      width: 22rem;
+      height: 22rem;
+      margin-top: var(--space-s);
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    #robot {
       width: 20rem;
       height: 20rem;
+    }
+  }
+
+  @media only screen and (max-width: 750px) {
+    #robot {
+      width: 18rem;
+      height: 18rem;
     }
   }
 
