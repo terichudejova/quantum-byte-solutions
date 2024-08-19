@@ -13,6 +13,8 @@ span {
   font-family: var(--main-font);
 }
 
+/* ---------------------------------------------------------------- */
+
 /* NAVBAR */
 .navbarSection {
   width: 100%;
@@ -60,6 +62,10 @@ span {
   color: var(--hover-color);
   cursor: pointer;
 }
+
+/* ---------------------------------------------------------------- */
+
+
 
 /* FIRST SECTION - ABOUT */
 #onas {
@@ -157,7 +163,7 @@ span {
   justify-content: start;
   align-items: center;
   margin-left: var(--size-m);
-  margin-right: var(--size-m);
+  margin-right: calc(var(--size-l) * 2);
 }
 
 .counts:nth-of-type(1) {
@@ -168,6 +174,10 @@ span {
   font-size: var(--size-m);
   margin-top: 0;
 }
+
+/* ---------------------------------------------------------------- */
+
+
 
 
 
@@ -188,10 +198,13 @@ span {
   height: auto;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 }
+
+/* ---------------------------------------------------------------- */
+
 
 
 
@@ -230,6 +243,7 @@ span {
   }
 
 
+/* ---------------------------------------------------------------- */
 
 
 
@@ -271,7 +285,7 @@ span {
     margin-bottom: var(--space-m);
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
   }
@@ -281,18 +295,18 @@ span {
     flex-direction: row;
     justify-content: start;
     align-items: start;
-    margin: 0 var(--space-xs) var(--space-xl) var(--space-xs);
-    width: 35rem;
+    margin: 0 var(--space-m) var(--space-xl) var(--space-xs);
+    width: 30rem;
     border-right: 0.5px solid white;
   }
 
   .teamCards .teamMember img {
-    width: 12rem;
-    height: 12rem;
+    width: 10rem;
+    height: 10rem;
     object-fit: fit;
     border-radius: 50%;
     border: 5px solid white;
-    margin-right: var(--space-m);
+    margin-right: var(--space-s);
     box-shadow: rgba(0, 0, 0, 0.2) 0 0 20px;
   }
 
@@ -318,6 +332,12 @@ span {
     color: white;
     margin: 0;
   }
+
+  /* ---------------------------------------------------------------- */
+
+
+
+
 
   /* FIFTH SECTION - RECENZE */
   .fifthSection-recenze {
@@ -359,13 +379,16 @@ span {
     flex-wrap: wrap;
   }
 
+/* ---------------------------------------------------------------- */
+
+
 
   
 
   /* SIXTH SECTION - KONTAKT */
   .sixthSection-contact {
     width: 100%;
-    height: 100rem;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -397,25 +420,31 @@ span {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: start;
+    align-items: center;
     margin-top: var(--space-xxl);
-  }
-
-  .sixthSection-contact .contactPage .formular {
-    width: 40%;
-    margin-right: var(--space-m);
-  }
-
-  .sixthSection-contact .contactPage .kontaktniInformace {
-    width: 60%;
+    margin-bottom: var(--space-m);
     height: auto;
     border-top: white 1px solid;
     border-bottom: white 1px solid;
+  }
+
+  .sixthSection-contact .contactPage .formular {
+    min-width: 40%;
+    max-width: 60%;
+    height: 100%;
+    margin: var(--space-s) var(--space-s) var(--space-s) 0;
+  }
+
+  .sixthSection-contact .contactPage .kontaktniInformace {
+    min-width: 40%;
+    max-width: 60%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: space-between;
     align-items: start;
   }
+  
 
   .sixthSection-contact .contactPage .kontaktniInformace .dvojice {
     display: flex;
@@ -436,4 +465,275 @@ span {
   .sixthSection-contact .contactPage .kontaktniInformace .dvojice p {
     color: white;
     font-size: var(--size-s);
+  }
+
+  .sixthSection-contact .contactPage .kontaktniInformace .mapa {
+    margin-bottom: var(--space-s);
+    box-shadow: rgba(0, 0, 0, 0.2) 0 0 20px;
+  }
+
+  #phoneIcon:hover,
+  #mapIcon:hover {
+    cursor: pointer;
+    color: var(--third-color);
+  }
+
+/* ---------------------------------------------------------------- */
+
+
+
+  /* FOOTER */
+  .footer {
+    height: auto;
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer p {
+    font-size: var(--size-xs);
+    margin-top: var(--space-s);
+    margin-bottom: var(--space-s);
+  }
+
+
+
+
+
+/* ---------------------------------------------------------------- */
+/* ---------------------------------------------------------------- */
+/* ---------------------------------------------------------------- */
+
+
+  /* RESPONSIVITA */
+
+
+  /* NAVBAR */
+  @media only screen and (max-width: 800px) {
+    .navbarSection .menu {
+      display: none;
+    }
+  }
+  
+
+
+  /* ---------------------------------------------------------------- */
+
+  /* ABOUT */
+   @media only screen and (max-width: 1420px) {
+    #robot {
+      width: 30rem;
+      height: 30rem;
+    }
+  }
+
+  @media only screen and (max-width: 1100px) {
+    #robot {
+      width: 25rem;
+      height: 25rem;
+    }
+  }
+
+  @media only screen and (max-width: 900px) {
+    #robot {
+      width: 20rem;
+      height: 20rem;
+    }
+  }
+
+  @media only screen and (max-width: 720px) {
+    .firstSection-about .leftColumn {
+      width: 100%;
+    }
+
+    .firstSection-about .rightColumn {
+      display: none;
+    }
+
+  }
+
+
+
+
+/* ---------------------------------------------------------------- */
+
+  /* POINTS*/
+  @media only screen and (max-width: 1350px) {
+    .secondSection-points .points {
+      display: grid;
+      grid-template-areas:
+      "a b"
+      "c d";
+    }
+
+    .secondSection-points .points:nth-child(1){
+      grid-area: a;
+    }
+
+    .secondSection-points .points:nth-child(2){
+      grid-area: b;
+    }
+
+    .secondSection-points .points:nth-child(3){
+      grid-area: c;
+    }
+
+    .secondSection-points .points:nth-child(4){
+      grid-area: d;
+    }
+  }
+  
+  @media only screen and (max-width: 720px) {
+    .secondSection-points .points {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: center;
+    }
+  }
+
+
+  /* ---------------------------------------------------------------- */
+
+  /* SERVICES */
+  @media only screen and (min-width: 1500px) {
+    .thirdSection-cards .bigCard {
+      justify-content: space-between;
+    }
+  }
+
+  @media only screen and (max-width: 1420px) {
+    .thirdSection-cards .bigCard {
+      justify-content: space-between;
+    }
+  }
+
+  @media only screen and (max-width: 950px) {
+    .thirdSection-cards .bigCard {
+      justify-content: center;
+    }
+  }
+
+
+/* ---------------------------------------------------------------- */
+
+  /* TEAM MEMBERS */
+  @media only screen and (max-width: 880px) {
+    .teamCards {
+      justify-content: center;
+    }
+
+    .teamCards .teamMember {
+      width: 100%;
+    }
+  }
+
+/* ---------------------------------------------------------------- */
+
+
+/* RECENZE */
+@media only screen and (max-width: 1100px) {
+    .fifthSection-recenze .recenze {
+      justify-content: center;
+    }
+}
+
+/* ---------------------------------------------------------------- */
+
+
+
+
+/* KONTAKT */
+@media only screen and (max-width: 1000px) {
+  .sixthSection-contact .contactPage {
+    flex-direction: column;
+  }
+
+  .sixthSection-contact .contactPage .formular {
+    min-width: 100%;
+    margin-right: 0;
+  }
+
+  .sixthSection-contact .contactPage .kontaktniInformace {
+    min-width: 100%;
+    align-items: center;
+    margin-top: var(--space-m);
+  }
+
+  .sixthSection-contact .contactPage .kontaktniInformace .dvojice {
+    justify-content: center;
+  }
+
+  .sixthSection-contact .contactPage .kontaktniInformace .mapa {
+    margin-top: var(--space-m);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .sixthSection-contact .contactPage .kontaktniInformace .mapa iframe {
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .sixthSection-contact .contactPage .kontaktniInformace .mapa iframe {
+    width: 350px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .sixthSection-contact .contactPage .kontaktniInformace .mapa iframe {
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .sixthSection-contact .contactPage .kontaktniInformace .mapa iframe {
+    width: 250px;
+  }
+}
+
+/* ---------------------------------------------------------------- */
+
+
+  /* Responsivita šířka outsideBox */
+  @media only screen and (min-width: 1500px) {
+    .outsideBox {
+      width: 75%;
+    }
+  }
+
+  @media only screen and (min-width: 1950px) {
+    .outsideBox {
+      width: 65%;
+    }
+  }
+
+  @media only screen and (min-width: 2250px) {
+    .outsideBox {
+      width: 60%;
+    }
+  }
+
+  @media only screen and (min-width: 2450px) {
+    .outsideBox {
+      width: 55%;
+    }
+  }
+
+  @media only screen and (min-width: 2650px) {
+    .outsideBox {
+      width: 50%;
+    }
+  }
+
+  @media only screen and (min-width: 2950px) {
+    .outsideBox {
+      width: 45%;
+    }
+  }
+
+  @media only screen and (min-width: 3250px) {
+    .outsideBox {
+      width: 40%;
+    }
   }

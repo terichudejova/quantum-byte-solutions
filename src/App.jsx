@@ -85,8 +85,8 @@ function App() {
 
 
         {/* THIRD SECTION - SLUŽBY */}
-        <div className='thirdSection-cards' id='sluzby'>
-          <div className='outsideBox'>
+        <div className='thirdSection-cards'>
+          <div className='outsideBox' id='sluzby'>
             <h2>Služby</h2>
             <div className='line'></div>
             <div className='bigCard'>
@@ -182,8 +182,8 @@ function App() {
 
 
         {/* FIFTH SECTION - RECENZE */}
-        <div className='fifthSection-recenze' id='recenzeLink'>
-            <div className='outsideBox'>
+        <div className='fifthSection-recenze'>
+            <div className='outsideBox' id='recenzeLink'>
               <h2>Recenze</h2>
               <div className='line'></div>
               <p className='popis'>Naše výsledky hovoří samy za sebe, ale ještě lépe o nás vypovídají zkušenosti našich spokojených klientů. Níže najdete recenze od firem, které díky našim řešením dosáhly svých cílů a překonaly náročné technologické výzvy. Spolupráce s námi jim přinesla nejen konkrétní výsledky, ale také dlouhodobou hodnotu a konkurenční výhodu.</p>
@@ -228,17 +228,31 @@ function App() {
                 />
               </div>
               <div className="kontaktniInformace">
-                <div className="dvojice">
-                  <EmailIcon className="contactIcon"/>
-                  <p>info@qbs.com</p>
+                <div>
+                  <div className="dvojice">
+                    <a href="mailto:info@qbs.com?subject=Dotaz&body=Dobrý den, zaujalo nás..."><EmailIcon className="contactIcon" id="phoneIcon"/></a>
+                    <p>info@qbs.com</p>
+                  </div>
+                  <div className="dvojice">
+                    <LocalPhoneIcon className="contactIcon"/>
+                    <p>+420 123 456 789</p>
+                  </div>
+                  <div className="dvojice">
+                    <a href="https://maps.app.goo.gl/NYGmuqYtWa66uWEf6" target="_blank" rel="noopener noreferrer"><LocationOnIcon className="contactIcon" id="mapIcon"/></a>
+                    <p>Pražský hrad, Hradčany, 119 08 Praha 1</p>
+                  </div>
                 </div>
-                <div className="dvojice">
-                  <LocalPhoneIcon className="contactIcon"/>
-                  <p>+420 123 456 789</p>
-                </div>
-                <div className="dvojice">
-                  <LocationOnIcon className="contactIcon"/>
-                  <p>Imaginární Ulice 123, Praha 1 110 00</p>
+                <div className="mapa">
+                  <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2559.742914967492!2d14.399041576392989!3d50.091100013173005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b951e6c24b7c3%3A0x2acf3c88af12259f!2zUHJhxb5za8O9IGhyYWQ!5e0!3m2!1scs!2scz!4v1723972062485!5m2!1scs!2scz" 
+                    width="500" 
+                    height="300"
+                    style={{ border: 0 }} 
+                    allowFullScreen="true" 
+                    loading="lazy" 
+                    referrerPolicy="no-referrer-when-downgrade"
+                  >
+                  </iframe>
                 </div>
               </div>
             </div>
@@ -246,6 +260,10 @@ function App() {
         </div>
 
 
+        {/* FOOTER */}
+        <div className="footer">
+          <p>© Tereza Chudějová, 2024</p>
+        </div>
 
 
 
