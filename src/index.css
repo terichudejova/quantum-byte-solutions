@@ -617,8 +617,12 @@ span {
       align-items: center;
     }
 
+    .secondSection-points .points .cardPoints {
+      margin-bottom: var(--space-xs);
+    }
+
     .secondSection-points {
-      margin-top: var(--space-xxl);
+      margin-top: var(--space-l);
     }
   }
 
@@ -655,6 +659,11 @@ span {
 
     .teamCards .teamMember {
       width: 100%;
+      margin-right: 0;
+    }
+
+    .teamCards .teamMember .teamMember-description .position {
+      margin-right: var(--space-xs);
     }
   }
 
@@ -666,6 +675,12 @@ span {
     .fifthSection-recenze .recenze {
       justify-content: center;
     }
+}
+
+@media only screen and (max-width: 450px) {
+  .fifthSection-recenze .recenze {
+    margin-top: calc(var(--space-l) * 1);
+  }
 }
 
 /* ---------------------------------------------------------------- */
@@ -773,8 +788,19 @@ span {
 /* ---------------------------------------------------------------- */
 
 
-/* VELIKOST PÍSMA */
+/* VELIKOST PÍSMA A LINE */
 @media only screen and (max-width: 850px) {
+  .footer p {
+    font-size: calc(var(--size-m) / 2);
+  }
+
+  .thirdSection-cards .line,
+  .fourthSection-team .line,
+  .fifthSection-recenze .line,
+  .sixthSection-contact .line {
+    width: 15%;
+  }
+
   .firstSection-about h1 {
     font-size: calc(var(--size-l) * 2);
   }
@@ -782,9 +808,7 @@ span {
   .countUp {
     font-size: calc(var(--size-s) * 3);
   }
-}
 
-@media only screen and (max-width: 850px) {
   .thirdSection-cards h2,
   .fourthSection-team h2,
   .fifthSection-recenze h2,
@@ -793,4 +817,76 @@ span {
   }
 }
 
+@media only screen and (max-width: 450px) {
+  .footer p {
+    font-size: calc(var(--size-s) / 2);
+  }
 
+  .thirdSection-cards .line,
+  .fourthSection-team .line,
+  .fifthSection-recenze .line,
+  .sixthSection-contact .line {
+    width: 20%;
+  }
+  
+  .firstSection-about h1 {
+    font-size: calc(var(--size-m) *2);
+  }
+
+  #motto {
+    font-size: var(--size-s2);
+  }
+
+  .firstSection-about .popis,
+  .fourthSection-team .popis,
+  .fifthSection-recenze .popis,
+  .sixthSection-contact .popis {
+    font-size: var(--size-s);
+  }
+
+  .sixthSection-contact .contactPage .kontaktniInformace .dvojice p {
+    font-size: var(--size-xs);
+  }
+
+  .thirdSection-cards .bigCard {
+    padding-top: var(--space-m);
+  }
+
+  .fourthSection-team .teamCards .teamMember .teamMember-description .name {
+    font-size: var(--size-s2);
+  }
+
+  .fourthSection-team .teamCards .teamMember .teamMember-description .position {
+    font-size: var(--size-xs);
+  }
+
+  .teamCards .teamMember img {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  .sixthSection-contact .contactPage .kontaktniInformace .dvojice .contactIcon {
+    font-size: var(--size-xl);
+    margin-right: var(--space-xs);
+  }
+}
+
+
+@media only screen and (max-width: 350px) {
+  .countUp {
+    font-size: calc(var(--size-s) * 2);
+  }
+
+  .counts-container .counts p {
+    font-size: var(--size-xs);
+  }
+
+  .sixthSection-contact .contactPage .kontaktniInformace .dvojice:nth-of-type(3) {
+    align-items: start;
+  }
+
+  .sixthSection-contact .contactPage .kontaktniInformace .dvojice p {
+    text-align: center;
+  }
+
+}

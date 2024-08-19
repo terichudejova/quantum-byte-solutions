@@ -111,7 +111,67 @@
     height: auto;
   }
 
-
-
-
 /* From Uiverse.io by vamsidevendrakumar */ 
+
+
+@media only screen and (max-width: 450px) {
+  .serviceCard {
+    height: 29rem;
+    margin-bottom: var(--space-l);
+  }
+
+  .card-front p:nth-of-type(1) {
+    font-size: var(--size-s2);
+  }
+
+  .card-front,
+  .card-back {
+    padding: 0 var(--space-xs);
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .serviceCard {
+    height: 30rem;
+    margin-bottom: var(--space-s);
+  }
+
+  .serviceCard .circleIcon .serviceCardIcon {
+    font-size: var(--size-xl) !important;
+  }
+
+  .serviceCard .circleIcon {
+    width: 6rem;
+    height: 6rem;
+    top: -3rem;
+    left: calc(50% - 3rem);
+  }
+
+  .card-front p:nth-of-type(1) {
+    margin-top: var(--space-l);
+  }
+
+}
+
+@media only screen and (max-width: 330px) {
+  .serviceCard {
+    height: 32rem;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .serviceCard {
+    height: 33rem;
+  }
+}
+
+@media only screen and (max-width: 310px) {
+  .card-front p:nth-of-type(1) {
+    font-size: var(--size-s);
+  }
+
+  .card-front,
+  .card-back {
+    padding: 0 var(--space-xxs);
+  }
+}
