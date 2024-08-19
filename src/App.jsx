@@ -88,8 +88,8 @@ function App() {
 
         {/* THIRD SECTION - SLUŽBY */}
         <div className='thirdSection-cards'>
-          <div className='outsideBox' id='sluzby'>
-            <h2>Služby</h2>
+          <div className='outsideBox'>
+            <h2 id='sluzby'>Služby</h2>
             <div className='line'></div>
             <div className='bigCard'>
               <ServiceCard icon={<InsightsIcon className="serviceCardIcon" style={{ fontSize: 40 }} />} serviceTitle={"Kvantová optimalizace"} serviceDescriptionFront={"Využití kvantových algoritmů k nalezení optimálních řešení pro složité problémy, jako je optimalizace dodavatelských řetězců, alokace zdrojů nebo predikce trhu."} serviceDescriptionBack={"S kvantovou optimalizací dokážeme rychle a efektivně řešit náročné úkoly, které klasickým algoritmům trvají neúměrně dlouho. Pomáháme firmám dosáhnout lepších výsledků v oblastech, jako je logistika, plánování zdrojů nebo analýza trhu."} />
@@ -105,9 +105,9 @@ function App() {
 
 
         {/* FOURT SECTION - TÝM */}
-        <div className='fourthSection-team' id='tym'>
+        <div className='fourthSection-team'>
             <div className='outsideBox'>
-              <h2>Tým</h2>
+              <h2 id='tym'>Tým</h2>
               <div className='line'></div>
               <p className='popis'>
                 Za každým úspěšným projektem stojí silný a dynamický tým, který se skládá z odborníků na špičkové úrovni ve svých oborech. Naše firma se může pochlubit nejen hlubokými znalostmi a technickými dovednostmi, ale i vášní pro inovace a neustálé zlepšování. Každý člen týmu přináší jedinečnou kombinaci zkušeností a znalostí, která nám umožňuje nacházet řešení i pro ty nejnáročnější technologické výzvy.<br/><br/>
@@ -185,8 +185,8 @@ function App() {
 
         {/* FIFTH SECTION - RECENZE */}
         <div className='fifthSection-recenze'>
-            <div className='outsideBox' id='recenzeLink'>
-              <h2>Recenze</h2>
+            <div className='outsideBox'>
+              <h2  id='recenzeLink'>Recenze</h2>
               <div className='line'></div>
               <p className='popis'>Naše výsledky hovoří samy za sebe, ale ještě lépe o nás vypovídají zkušenosti našich spokojených klientů. Níže najdete recenze od firem, které díky našim řešením dosáhly svých cílů a překonaly náročné technologické výzvy. Spolupráce s námi jim přinesla nejen konkrétní výsledky, ale také dlouhodobou hodnotu a konkurenční výhodu.</p>
               <div className='recenze'>
@@ -217,9 +217,9 @@ function App() {
 
 
         {/* LAST SECTION - KONTAKT */}
-        <div className='sixthSection-contact' id='kontakt'>
+        <div className='sixthSection-contact'>
           <div className='outsideBox'>
-            <h2>Kontaktujte nás</h2>
+            <h2  id='kontakt'>Kontaktujte nás</h2>
             <div className='line'></div>
             <p className="popis">Máte otázky, potřebujete poradit nebo hledáte partnera pro řešení vašich technologických výzev? Jsme tu, abychom vám pomohli. Ať už se jedná o konkrétní dotaz, poptávku po našich službách nebo obecnou konzultaci, neváhejte se na nás obrátit. Kontaktujte nás prostřednictvím níže uvedených údajů nebo jednoduše vyplňte kontaktní formulář. Náš tým se vám ozve co nejdříve a společně najdeme nejlepší řešení pro vaše potřeby. Těšíme se na spolupráci s vámi a na to, jak společně posuneme hranice možného.</p>
             <div className='contactPage'>
