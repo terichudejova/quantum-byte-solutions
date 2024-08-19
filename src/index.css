@@ -513,7 +513,7 @@ span {
 
   /* NAVBAR */
   @media only screen and (max-width: 800px) {
-    .navbarSection .menu a {
+    .navbarSection .menu {
       display: none;
     }
 
