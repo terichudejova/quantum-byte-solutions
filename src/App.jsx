@@ -233,15 +233,15 @@ function App() {
                 <div>
                   <div className="dvojice">
                     <a href="mailto:info@qbs.com?subject=Dotaz&body=Dobrý den, zaujalo nás..."><EmailIcon className="contactIcon"/></a>
-                    <p>info@qbs.com</p>
+                    <a href="mailto:info@qbs.com?subject=Dotaz&body=Dobrý den, zaujalo nás..."><p>info@qbs.com</p></a>
                   </div>
                   <div className="dvojice">
                     <a href="tel:+420123456789"><LocalPhoneIcon className="contactIcon"/></a>
-                    <p>+420 123 456 789</p>
+                    <a href="tel:+420123456789"><p>+420 123 456 789</p></a>
                   </div>
                   <div className="dvojice">
                     <a href="https://maps.app.goo.gl/NYGmuqYtWa66uWEf6" target="_blank" rel="noopener noreferrer"><LocationOnIcon className="contactIcon"/></a>
-                    <p>Pražský hrad, Hradčany, 119 08 Praha 1</p>
+                    <a href="https://maps.app.goo.gl/NYGmuqYtWa66uWEf6" target="_blank" rel="noopener noreferrer"><p>Pražský hrad, Hradčany, 119 08 Praha 1</p></a>
                   </div>
                 </div>
                 <div className="mapa">

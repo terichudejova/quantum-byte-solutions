@@ -466,14 +466,16 @@ span {
     margin-right: var(--space-s);
   }
 
-  .sixthSection-contact .contactPage .kontaktniInformace .dvojice .contactIcon:hover {
-    cursor: pointer;
-    color: var(--third-color);
-  }
-
-  .sixthSection-contact .contactPage .kontaktniInformace .dvojice p {
+  .sixthSection-contact .contactPage .kontaktniInformace .dvojice a {
     color: white;
     font-size: var(--size-s);
+    text-decoration: none;
+  }
+
+  .sixthSection-contact .contactPage .kontaktniInformace .dvojice:hover .contactIcon,
+  .sixthSection-contact .contactPage .kontaktniInformace .dvojice:hover a {
+    cursor: pointer;
+    color: var(--third-color);
   }
 
   .sixthSection-contact .contactPage .kontaktniInformace .mapa {
