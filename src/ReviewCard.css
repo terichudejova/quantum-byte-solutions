@@ -24,19 +24,19 @@
 .reviewContainer h3 {
     font-size: var(--size-m);
     font-family: var(--main-font);
-    margin: var(--size-xxl) 0 0 var(--size-xl);
+    margin: var(--size-xxl) 0 0 var(--size-xxl);
     color: var(--third-color);
 }
 
 .reviewContainer p {
     font-size: var(--size-s);
-    margin-left: var(--size-xl);
-    margin-right: var(--size-xl);
-    text-align: justify;
+    margin-left: var(--size-xxl);
+    margin-right: var(--size-xxl);
+    text-align: left;
 }
 
 .reviewContainer .stars {
-    margin-left: var(--size-xl);
+    margin-left: var(--size-xxl);
 }
 
 .reviewContainer .stars .star {
@@ -45,7 +45,7 @@
 }
 
 .reviewContainer .reviewLine {
-    margin-left: var(--size-xl);
+    margin-left: var(--size-xxl);
     width: 25%;
     height: 2px;
     background-color: var(--second-color);

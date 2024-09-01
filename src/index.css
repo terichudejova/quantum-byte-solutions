@@ -96,7 +96,7 @@ span {
 
 .firstSection-about .popis {
   font-size: var(--size-s2);
-  text-align: justify;
+  text-align: left;
   margin-top: var(--size-m);
 }
 
@@ -278,7 +278,7 @@ span {
 
   .fourthSection-team .popis {
     font-size: var(--size-s2);
-    text-align: justify;
+    text-align: left;
     margin-top: var(--size-xxl);
     color: white;
   }
@@ -369,7 +369,7 @@ span {
 
   .fifthSection-recenze .popis {
     font-size: var(--size-s2);
-    text-align: justify;
+    text-align: left;
     margin-top: var(--size-xxl);
     color: black;
   }
@@ -416,7 +416,7 @@ span {
 
   .sixthSection-contact .popis {
     font-size: var(--size-s2);
-    text-align: justify;
+    text-align: left;
     margin-top: var(--size-xxl);
     color: white;
   }
