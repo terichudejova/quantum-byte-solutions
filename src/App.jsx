@@ -18,6 +18,7 @@ import EmailIcon from '@mui/icons-material/Email';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import HamburgerMenu from "./HamburgerMenu"
+import FormularComponent from "./FormularComponent";
 
 
 function App() {
@@ -223,12 +224,13 @@ function App() {
             <div className='line'></div>
             <p className="popis">Máte otázky, potřebujete poradit nebo hledáte partnera pro řešení vašich technologických výzev? Jsme tu, abychom vám pomohli. Ať už se jedná o konkrétní dotaz, poptávku po našich službách nebo obecnou konzultaci, neváhejte se na nás obrátit. Kontaktujte nás prostřednictvím níže uvedených údajů nebo jednoduše vyplňte kontaktní formulář. Náš tým se vám ozve co nejdříve a společně najdeme nejlepší řešení pro vaše potřeby. Těšíme se na spolupráci s vámi a na to, jak společně posuneme hranice možného.</p>
             <div className='contactPage'>
-              <div className="formular">
+              <FormularComponent />
+              {/* <div className="formular">
                 <FormfacadeEmbed
                   formFacadeURL="https://formfacade.com/include/107952329843461447605/form/1FAIpQLSfqS0LYJHpjVowh33JVg9l8V3lK1lL8fyWWvQM4KnT5wlfJnw/classic.js/?div=ff-compose"
                   onSubmitForm={() => console.log('Form submitted')}
                 />
-              </div>
+              </div> */}
               <div className="kontaktniInformace">
                 <div>
                   <div className="dvojice">

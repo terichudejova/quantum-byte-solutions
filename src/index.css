@@ -268,7 +268,7 @@ span {
     font-family: var(--heading-font);
     font-size: calc(var(--size-l) * 2);
     letter-spacing: 0.4rem;
-    color: var(--third-color);
+    color: white;
   }
 
   .fourthSection-team .line {
@@ -406,7 +406,7 @@ span {
     font-family: var(--heading-font);
     font-size: calc(var(--size-l) * 2);
     letter-spacing: 0.4rem;
-    color: var(--third-color);
+    color: white;
   }
 
   .sixthSection-contact .line {
@@ -698,7 +698,7 @@ span {
 
 
 /* KONTAKT */
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1400px) {
   .sixthSection-contact .contactPage {
     flex-direction: column;
   }

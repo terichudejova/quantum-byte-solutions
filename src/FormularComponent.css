@@ -1,0 +1,136 @@
+/* Styling celého formuláře */
+.formularObject {
+    background: var(--main-color);
+    padding: 20px 30px;
+    border-radius: 16px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 50rem;
+    height: 40rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    font-size: var(--size-s);
+    font-family: var(--main-font);
+    margin-right: var(--space-xl);
+  }
+  
+  
+  
+  /* Styling inputů (jméno a email) */
+  .inputStyle {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: white;
+  }
+  
+  
+  /* Styling textArea (zpráva) */
+  .textArea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    min-height: 100px;
+    box-sizing: border-box;
+    background-color: white;
+  }
+  
+  
+  
+  /* Definice animace pro tlačítko */
+  @keyframes gradient {
+      0% { background-position: 0 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0 50%; }
+    }
+    
+    /* Styl pro tlačítko */
+    .formularButton {
+      width: 150px;
+      height: 50px;
+      color: white;
+      background-color: var(--third-color);
+      font-weight: 600;
+      font-size: var(--size-s2);
+      position: relative;
+      overflow: hidden;
+      border-radius: 16px;
+      cursor: pointer;
+      transition-duration: all 2s ease-in-out;
+      margin-top: var(--space-xs);
+    }
+  
+    .formularButton:hover {
+      color: var(--hover-color);
+    }
+  
+    
+    /* Styl labelů (popisků) */
+    .label {
+      margin-bottom: var(--space-xs);
+      color: var(--third-color);
+    }
+  
+  
+  
+  
+     @media only screen and (min-width: 2000px) {
+      .formularObject {
+        height: 45rem;
+      }
+  
+      .label {
+        font-size: var(--size-m);
+      }
+  
+      .formularButton {
+        font-size: var(--size-m);
+      }
+    }
+  
+    @media only screen and (max-width: 1400px) {
+      .formularObject {
+        margin: var(--space-xl) 0 0 0;
+        width: 60rem;
+      }
+    }
+  
+    @media only screen and (max-width: 700px) {
+      .formularObject {
+        width: 100%;
+        height: 50rem;
+      }
+  
+      .textArea {
+        min-height: 180px;
+      }
+  
+      .formularButton {
+        margin-top: var(--space-s);
+      }
+  
+      .label {
+        font-size: var(--size-s);
+      }
+    }
+  
+    @media only screen and (max-width: 450px) {
+      .formularObject {
+        height: 60rem;
+      }
+  
+      .textArea {
+        min-height: 260px;
+      }
+  
+      .formularButton {
+        margin-top: var(--space-s);
+      }
+    }
